@@ -8,17 +8,12 @@ use Illuminate\Support\Facades\Gate;
 class AuthServiceProvider extends ServiceProvider
 {
     /**
-     * The policy mappings for the application.
+     * The model to policy mappings for the application.
      *
-     * @var array
+     * @var array<class-string, class-string>
      */
     protected $policies = [
-        'App\Models\PostCategory' => 'App\Policies\IsAdmin',
-        'App\Models\Testimony' => 'App\Policies\IsAdmin',
-        'App\Models\Destination' => 'App\Policies\IsAdmin',
-        'App\Models\Gallery' => 'App\Policies\IsAdmin',
-        'App\Models\Contact' => 'App\Policies\IsAdmin',
-        'App\Models\Booking' => 'App\Policies\IsAdmin',
+        // 'App\Models\Model' => 'App\Policies\ModelPolicy',
     ];
 
     /**

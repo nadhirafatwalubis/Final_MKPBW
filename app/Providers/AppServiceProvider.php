@@ -2,9 +2,6 @@
 
 namespace App\Providers;
 
-use App\Views\Composers\AboutComposer;
-use Illuminate\Pagination\Paginator;
-use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -16,6 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        //
     }
 
     /**
@@ -25,6 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Paginator::useBootstrap();
+        //
     }
 }
